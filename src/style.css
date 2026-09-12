@@ -11,7 +11,11 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Onest", sans-serif;
+}
+
+body.oppenheimer-page {
+    font-family: 'Onest', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
@@ -19,8 +23,12 @@ body {
 }
 
 /* Typography Overrides */
-h1, h2, h3, .logo, .stat-number {
-    font-family: 'Playfair Display', serif;
+body.oppenheimer-page h1, 
+body.oppenheimer-page h2, 
+body.oppenheimer-page h3, 
+.logo, .stat-number {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
 }
 
 /* Animations */
@@ -296,4 +304,85 @@ footer {
     .nav-links {
         display: none; /* simple responsive handling */
     }
+}
+
+/* =========================================
+   MERGED STYLES FROM ROOT style.css
+   ========================================= */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&family=Onest:wght@100..900&display=swap"); */
+
+/* body {
+  font-family: "Onest", sans-serif;
+} Note: commented out to preserve Lato font for the landing page */
+
+.mono-label {
+  font-family: "Geist Mono", monospace;
+}
+
+.accent-italic {
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
+}
+
+.box {
+  position: relative; /* jadi patokan buat overlay di dalemnya */
+  width: 300px;
+  overflow: hidden;
+}
+
+.box img {
+  display: block;
+  width: 100%;
+}
+
+.box-overlay {
+  /* inset: 10px; g jadi ini buat di tengah doang*/
+  position: absolute;
+  bottom: 0;
+  top: 50%; /* nempel di bawah aja, bukan inset semua sisi */
+  left: 0;
+  right: 0;
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.4); /* dasar gelap transparan */
+  backdrop-filter: blur(3px); /* ini yang bikin efek blur */
+  -webkit-backdrop-filter: blur(8px);
+
+  color: white;
+  opacity: 0;
+  transform: translateY(10px); /* dikit geser ke bawah pas belum hover */
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.box:hover .box-overlay {
+  opacity: 1;
+}
+
+.font-onest {
+  font-family: "Onest", sans-serif;
+  font-weight: 600;
+}
+
+.font-serif-accent {
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.box-title {
+  font-family: "Onest", sans-serif;
+  font-weight: 600;
+  font-size: 14px; /* kecil, sesuai maumu */
+}
+
+.box-desc {
+  font-family: "Geist Mono", monospace;
+  font-weight: 400;
+  font-size: 13px;
 }

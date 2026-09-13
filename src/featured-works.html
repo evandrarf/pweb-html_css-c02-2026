@@ -3,48 +3,188 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Featured Works</title>
+    <title>Featured Works | J. Robert Oppenheimer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&family=Onest:wght@100..900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="featured-works.css" />
   </head>
-  <body>
-    <h2>
-      <span class="font-onest">Oppenheimer</span>
-      <span class="font-serif-accent">Projects</span>
-    </h2>
+  <body class="oppenheimer-page">
+    <nav class="animate-fade-in">
+      <div class="logo">J.R. OPPENHEIMER</div>
 
-    <div class="box">
-      <img
-        src="./images/manhattan.jpg"
-        alt="Manhattan Project"
-        width="300"
-        height="200" />
-      <div class="box-overlay">
-        <span class="box-number">[001]</span>
-        <h3 class="box-title">Manhattan Project</h3>
-        <p class="box-category">Research, Physics, Leadership</p>
-        <p class="box-desc">Deskripsi lengkap project ini, muncul pas hover.</p>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="featured-works.html">Featured Works</a>
+        <a href="manhattan-project.html">Manhattan Project</a>
+      </div>
+    </nav>
+
+    <div class="page-wrapper">
+      <h1 class="page-title">
+        <span class="font-onest">Featured</span>
+        <span class="font-serif-accent">Works</span>
+      </h1>
+
+      <div class="content-row">
+        <div class="side-text">
+          <p>
+            Julius Robert Oppenheimer was an American theoretical physicist,
+            widely known as the "father of the atomic bomb" for his role
+            directing the Manhattan Project during World War II. His work
+            reshaped nuclear physics and left a lasting mark on science, policy,
+            and the modern world.
+          </p>
+        </div>
+
+        <ul class="projects-list">
+          <li class="project-item">
+            <div class="box">
+              <img
+                src="images/born-oppenheimer.jpg"
+                alt="Born–Oppenheimer Approximation"
+              />
+              <div class="box-overlay">
+                <h2 class="box-title">Born–Oppenheimer Approximation</h2>
+                <p class="box-desc">
+                  With Max Born, formulated the Born–Oppenheimer approximation
+                  that separates nuclear and electronic motion in molecules,
+                  becoming a foundation of modern quantum chemistry.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="project-item">
+            <div class="box">
+              <img
+                src="images/quantum-tunneling.jpg"
+                alt="Quantum Tunneling and Alpha Decay"
+              />
+              <div class="box-overlay">
+                <h2 class="box-title">Quantum Tunneling & Alpha Decay</h2>
+                <p class="box-desc">
+                  Developed the theory of quantum tunneling, later used to
+                  explain alpha decay, one of the earliest applications of
+                  quantum mechanics to atomic nuclei.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="project-item">
+            <div class="box">
+              <img
+                src="images/oppenheimer-phillips.jpg"
+                alt="Oppenheimer–Phillips Process"
+              />
+              <div class="box-overlay">
+                <h2 class="box-title">Oppenheimer–Phillips Process</h2>
+                <p class="box-desc">
+                  With Melba Phillips, explained deuteron-induced nuclear
+                  reactions, now known as the Oppenheimer–Phillips process,
+                  important in experimental nuclear physics.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="project-item">
+            <div class="box">
+              <img
+                src="images/cosmic-rays.jpg"
+                alt="Cosmic Ray Showers Theory"
+              />
+              <div class="box-overlay">
+                <h2 class="box-title">Cosmic Ray Showers Theory</h2>
+                <p class="box-desc">
+                  Developed the theory of cosmic ray showers—cascades of
+                  high-energy particles in the atmosphere—contributing to early
+                  astrophysics and particle physics.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="project-item">
+            <div class="box">
+              <img
+                src="images/neutron-stars.jpg"
+                alt="Neutron Stars and Black Holes"
+              />
+              <div class="box-overlay">
+                <h2 class="box-title">Neutron Stars & Black Holes</h2>
+                <p class="box-desc">
+                  With George Volkoff and Hartland Snyder, predicted neutron
+                  stars and the gravitational collapse of massive stars into
+                  what are now called black holes.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="project-item">
+            <div class="box">
+              <img src="images/manhattan.jpg" alt="Manhattan Project" />
+              <div class="box-overlay">
+                <h2 class="box-title">Manhattan Project</h2>
+                <p class="box-desc">
+                  Directed the Los Alamos Laboratory during the Manhattan
+                  Project, leading the development of the first atomic bombs and
+                  the 1945 Trinity test.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="project-item">
+            <div class="box">
+              <img src="images/berkeley.jpg" alt="Berkeley Physics" />
+              <div class="box-overlay">
+                <h2 class="box-title">Berkeley Years</h2>
+                <p class="box-desc">
+                  Professor of physics at UC Berkeley, building one of the
+                  leading centers of theoretical physics in the U.S. and
+                  mentoring a generation of physicists.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="project-item">
+            <div class="box">
+              <img
+                src="images/ias-princeton.jpg"
+                alt="Institute for Advanced Study"
+              />
+              <div class="box-overlay">
+                <h2 class="box-title">IAS & Security Controversy</h2>
+                <p class="box-desc">
+                  Director of the Institute for Advanced Study, Princeton;
+                  engaged in nuclear policy debates and faced a 1954 security
+                  hearing that revoked his clearance.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
 
-    <div class="box">
-      <img
-        src="./images/manhattan.jpg"
-        alt="Manhattan Project"
-        width="300"
-        height="200" />
-      <div class="box-overlay">
-        <span class="box-number">[001]</span>
-        <h3 class="box-title">Manhattan Project</h3>
-        <p class="box-category">Research, Physics, Leadership</p>
-        <p class="box-desc">Deskripsi lengkap project ini, muncul pas hover.</p>
-      </div>
-    </div>
+    <footer>
+      <p>&copy; 2026 Web Programming Group C02 2026</p>
+    </footer>
   </body>
 </html>

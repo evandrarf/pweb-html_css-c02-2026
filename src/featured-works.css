@@ -16,8 +16,7 @@ body {
   color: var(--text-color);
   line-height: 1.6;
 }
-
-/* NAVBAR */
+/* navbar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -33,12 +32,13 @@ nav {
   letter-spacing: 1px;
 }
 
+/* ---- Hamburger menu (mobile only, toggled via checkbox hack) ---- */
 .menu-toggle-checkbox {
   display: none;
 }
 
 .hamburger {
-  display: none;
+  display: none; /* disembunyikan di desktop */
   position: relative;
   z-index: 9999;
   cursor: pointer;
@@ -56,6 +56,7 @@ nav {
   transform-origin: center;
 }
 
+/* ---- Nav links + underline hover/active effect ---- */
 .nav-links {
   display: flex;
   gap: 36px;
@@ -94,6 +95,7 @@ nav {
   color: #ffffff;
 }
 
+/* animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -108,7 +110,6 @@ nav {
   animation: fadeIn 1.5s ease-out forwards;
 }
 
-/* FONT UTILITIES */
 .font-onest {
   font-family: "Onest", sans-serif;
   font-weight: 700;
@@ -120,7 +121,6 @@ nav {
   font-weight: 400;
 }
 
-/* PAGE WRAPPER */
 .page-wrapper {
   padding: 0;
 }
@@ -130,7 +130,7 @@ nav {
   color: var(--text-color);
 }
 
-/* SECTION: EDUCATION */
+/* education */
 .resume-section {
   padding: 0px 60px 40px 60px;
 }
@@ -141,6 +141,7 @@ nav {
   gap: 60px;
 }
 
+/* ---- Timeline (garis vertikal + titik penanda tiap item) ---- */
 .timeline {
   position: relative;
   flex: 1;
@@ -199,6 +200,7 @@ nav {
   max-width: 650px;
 }
 
+/* ---- Foto samping timeline ---- */
 .resume-photo {
   flex-shrink: 0;
   width: 460px;
@@ -212,7 +214,7 @@ nav {
   border-radius: 10px;
 }
 
-/* SECTION: FEATURED WORKS */
+/* featured works */
 .featured-section {
   padding: 0px 60px 80px 60px;
   border-top: 1px solid #333;
@@ -225,6 +227,7 @@ nav {
   gap: 60px;
 }
 
+/* ---- Teks deskripsi, sticky ikut discroll di desktop ---- */
 .side-text {
   order: 2;
   flex: 1;
@@ -237,6 +240,7 @@ nav {
   top: 100px;
 }
 
+/* ---- Grid kartu project ---- */
 .projects-list {
   order: 1;
   list-style: none;
@@ -269,6 +273,7 @@ nav {
   transition: transform 0.4s ease;
 }
 
+/* ---- Overlay deskripsi, muncul pas hover ---- */
 .box-overlay {
   position: absolute;
   bottom: 0;
@@ -305,7 +310,7 @@ nav {
   margin: 0;
 }
 
-/* EFEK HOVER */
+/* ---- Efek hover: overlay muncul + gambar zoom sedikit ---- */
 .project-item:hover .box-overlay {
   opacity: 1;
   transform: translateY(0);
@@ -320,7 +325,7 @@ nav {
   transform: scale(1.05);
 }
 
-/* FOOTER */
+/* footer */
 footer {
   text-align: center;
   padding: 3rem;
@@ -330,8 +335,9 @@ footer {
   animation: fadeIn 1s ease-out 1s forwards;
 }
 
-/* RESPONSIVE: MOBILE */
+/* responsive mobile */
 @media (max-width: 768px) {
+  /* ---- Navbar mobile: hamburger muncul, nav-links jadi drawer ---- */
   nav {
     padding: 20px 24px;
   }
@@ -355,6 +361,7 @@ footer {
     z-index: 20;
   }
 
+  /* animasi icon hamburger jadi X pas checkbox dicentang */
   .menu-toggle-checkbox:checked + .hamburger span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
@@ -371,6 +378,7 @@ footer {
     right: 0;
   }
 
+  /* ---- Section Education mobile: foto pindah ke atas timeline ---- */
   .resume-section {
     padding: 0px 20px 32px 20px;
   }
@@ -403,6 +411,7 @@ footer {
     left: -31px;
   }
 
+  /* ---- Section Featured Works mobile: teks pindah ke atas grid, sticky mati ---- */
   .featured-section {
     padding: 32px 20px 60px 20px;
   }
@@ -428,7 +437,7 @@ footer {
   .side-text {
     order: 1;
     max-width: 100%;
-    position: static;
+    position: static; /* sticky dimatikan khusus mobile */
   }
 
   .projects-list {

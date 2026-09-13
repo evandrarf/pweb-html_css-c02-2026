@@ -1,0 +1,444 @@
+/* ============================================================
+   manhattan-project.css
+   Page-specific styles for the Manhattan Project detail page.
+   Extends style.css (shared with landing page).
+   ============================================================ */
+
+/* ---- Nav active link ---- */
+.nav-active {
+  color: #aaaaaa !important;
+  border-bottom: 1px solid #aaaaaa;
+  padding-bottom: 2px;
+}
+
+/* ---- Hero override for Manhattan page ---- */
+.mp-hero {
+  position: relative;
+  min-height: 85vh;
+  padding: 4rem 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.mp-hero-label {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #888888;
+  margin-bottom: 1.5rem;
+  z-index: 1;
+}
+
+.mp-tag {
+  color: #ffffff;
+  border: 1px solid #444;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+}
+
+.mp-hero-title {
+  font-size: 6rem;
+  line-height: 1.05;
+}
+
+.mp-scroll-btn {
+  margin-top: 2.5rem;
+  z-index: 1;
+  opacity: 0;
+  animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
+}
+
+/* ---- Shared section tweaks ---- */
+.mp-section {
+  /* inherits .section from style.css */
+}
+
+.mp-img-caption {
+  margin-top: 0.75rem;
+  color: #666;
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+/* ---- Key Facts Table Section ---- */
+.mp-facts-section {
+  padding: 5rem 10%;
+  background-color: #0d0d0d;
+  opacity: 0;
+  animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
+}
+
+.mp-facts-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mp-section-title {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+}
+
+.mp-section-subtitle {
+  font-size: 1rem;
+  color: #888;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
+.mp-table-wrapper {
+  overflow-x: auto; /* responsive scroll on small screens */
+}
+
+.mp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+.mp-table thead {
+  background-color: #1e1e1e;
+}
+
+.mp-table th {
+  text-align: left;
+  padding: 1rem 1.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #888888;
+  font-weight: 700;
+  border-bottom: 1px solid #333;
+}
+
+.mp-table td {
+  padding: 0.9rem 1.5rem;
+  border-bottom: 1px solid #222;
+  font-weight: 300;
+  vertical-align: top;
+}
+
+.mp-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.mp-table tbody tr:hover {
+  background-color: #1a1a1a;
+}
+
+/* ---- Ordered List ---- */
+.mp-ol {
+  list-style: decimal;
+  list-style-position: outside;
+  padding-left: 1.5rem;
+  color: #cccccc;
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.mp-ol li {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  padding-left: 0.5rem;
+}
+
+/* ---- Science / Cards Section ---- */
+.mp-science-section {
+  padding: 5rem 10%;
+  background-color: #0d0d0d;
+  opacity: 0;
+  animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
+}
+
+.mp-science-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mp-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.mp-card {
+  background-color: #161616;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 2rem;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+.mp-card:hover {
+  border-color: #555;
+  transform: translateY(-4px);
+}
+
+.mp-card-number {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-size: 3.5rem;
+  color: #2a2a2a;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.75rem;
+}
+
+.mp-card h3 {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+
+.mp-card-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.82rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mp-badge {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.mp-badge-alt {
+  background-color: #333333;
+  color: #eeeeee;
+}
+
+.mp-card p {
+  color: #aaaaaa;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+/* ---- Unordered List ---- */
+.mp-ul {
+  list-style: disc;
+  list-style-position: outside;
+  padding-left: 1.5rem;
+  color: #cccccc;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.mp-ul li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+/* ---- Blockquote ---- */
+.mp-quote {
+  border-left: 2px solid #444;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0 0;
+  color: #999;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  background-color: #111;
+  border-radius: 0 4px 4px 0;
+}
+
+/* ---- Contact Form Section ---- */
+.mp-form-section {
+  padding: 5rem 10%;
+  opacity: 0;
+  animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
+}
+
+.mp-form-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.mp-form {
+  margin-top: 1rem;
+}
+
+.mp-fieldset {
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 2.5rem;
+  background-color: #0d0d0d;
+}
+
+.mp-legend {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #888;
+  padding: 0 0.5rem;
+  font-weight: 700;
+}
+
+.mp-form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mp-form-group label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #aaaaaa;
+  font-weight: 700;
+}
+
+.mp-form-group input,
+.mp-form-group select,
+.mp-form-group textarea {
+  background-color: #161616;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: 'Onest', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  padding: 0.85rem 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  width: 100%;
+}
+
+.mp-form-group input:focus,
+.mp-form-group select:focus,
+.mp-form-group textarea:focus {
+  border-color: #666666;
+  background-color: #1c1c1c;
+}
+
+.mp-form-group input::placeholder,
+.mp-form-group textarea::placeholder {
+  color: #555;
+}
+
+.mp-form-group select option {
+  background-color: #161616;
+  color: #ffffff;
+}
+
+.mp-form-group textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.mp-submit-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 1rem 2.5rem;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Onest', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.mp-submit-btn:hover {
+  background-color: #dddddd;
+  transform: translateY(-3px);
+}
+
+.mp-submit-btn:active {
+  transform: translateY(0);
+}
+
+/* ============================================================
+   RESPONSIVE – Mobile / Tablet
+   ============================================================ */
+@media (max-width: 1024px) {
+  .mp-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mp-hero-title {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mp-hero-title {
+    font-size: 3rem;
+  }
+
+  .mp-hero-label {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .mp-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mp-section-title {
+    font-size: 2.2rem;
+  }
+
+  .mp-facts-section,
+  .mp-science-section,
+  .mp-form-section {
+    padding: 3rem 5%;
+  }
+
+  .mp-fieldset {
+    padding: 1.5rem;
+  }
+
+  .mp-table th,
+  .mp-table td {
+    padding: 0.75rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mp-hero-title {
+    font-size: 2.4rem;
+  }
+
+  .mp-section-title {
+    font-size: 1.9rem;
+  }
+}

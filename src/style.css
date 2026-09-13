@@ -63,59 +63,34 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 60px;
-  border-bottom: 1px solid #333;
+  padding: 2rem 5%;
   position: relative;
   z-index: 10;
 }
 
 .logo {
-  font-family: "Instrument Serif", serif;
-  font-style: italic;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-
-.menu-toggle-checkbox {
-  display: none;
-}
-
-.hamburger {
-  display: none;
-  position: relative;
-  z-index: 9999;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-}
-
-.hamburger span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #ffffff;
-  transition: all 0.3s ease;
-  transform-origin: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 .nav-links {
   display: flex;
-  gap: 36px;
+  gap: 2rem;
 }
 
 .nav-links a {
-  font-family: "Geist Mono", monospace;
-  font-size: 13px;
-  font-weight: 600;
-  color: #cccccc;
+  color: var(--text-color);
   text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
   letter-spacing: 1px;
-  transition: color 0.2s ease;
+  font-weight: 700;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #ffffff;
+  color: #aaaaaa;
 }
 
 /* Hero Section (inspired by reference) */
@@ -340,43 +315,8 @@ footer {
     gap: 2rem;
     margin-top: 3rem;
   }
-  nav {
-    padding: 20px 24px;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
   .nav-links {
-    position: fixed;
-    top: 0;
-    right: -260px;
-    width: 240px;
-    height: 100vh;
-    background-color: #1a1a1a;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 80px 24px;
-    gap: 24px;
-    transition: right 0.3s ease;
-    z-index: 20;
-  }
-
-  .menu-toggle-checkbox:checked + .hamburger span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .menu-toggle-checkbox:checked + .hamburger span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-toggle-checkbox:checked + .hamburger span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .menu-toggle-checkbox:checked ~ .nav-links {
-    right: 0;
+    display: none; /* simple responsive handling */
   }
 }
 

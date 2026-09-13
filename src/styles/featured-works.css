@@ -32,7 +32,7 @@ nav {
   letter-spacing: 1px;
 }
 
-/* ---- Hamburger menu (mobile only, toggled via checkbox hack) ---- */
+
 .menu-toggle-checkbox {
   display: none;
 }
@@ -56,7 +56,7 @@ nav {
   transform-origin: center;
 }
 
-/* ---- Nav links + underline hover/active effect ---- */
+
 .nav-links {
   display: flex;
   gap: 36px;
@@ -141,7 +141,7 @@ nav {
   gap: 60px;
 }
 
-/* ---- Timeline (garis vertikal + titik penanda tiap item) ---- */
+
 .timeline {
   position: relative;
   flex: 1;
@@ -200,7 +200,7 @@ nav {
   max-width: 650px;
 }
 
-/* ---- Foto samping timeline ---- */
+
 .resume-photo {
   flex-shrink: 0;
   width: 460px;
@@ -227,7 +227,7 @@ nav {
   gap: 60px;
 }
 
-/* ---- Teks deskripsi, sticky ikut discroll di desktop ---- */
+
 .side-text {
   order: 2;
   flex: 1;
@@ -240,7 +240,7 @@ nav {
   top: 100px;
 }
 
-/* ---- Grid kartu project ---- */
+
 .projects-list {
   order: 1;
   list-style: none;
@@ -273,7 +273,7 @@ nav {
   transition: transform 0.4s ease;
 }
 
-/* ---- Overlay deskripsi, muncul pas hover ---- */
+
 .box-overlay {
   position: absolute;
   bottom: 0;
@@ -310,7 +310,7 @@ nav {
   margin: 0;
 }
 
-/* ---- Efek hover: overlay muncul + gambar zoom sedikit ---- */
+
 .project-item:hover .box-overlay {
   opacity: 1;
   transform: translateY(0);
@@ -337,7 +337,7 @@ footer {
 
 /* responsive mobile */
 @media (max-width: 768px) {
-  /* ---- Navbar mobile: hamburger muncul, nav-links jadi drawer ---- */
+
   nav {
     padding: 20px 24px;
   }
@@ -378,7 +378,7 @@ footer {
     right: 0;
   }
 
-  /* ---- Section Education mobile: foto pindah ke atas timeline ---- */
+
   .resume-section {
     padding: 0px 20px 32px 20px;
   }
@@ -411,7 +411,7 @@ footer {
     left: -31px;
   }
 
-  /* ---- Section Featured Works mobile: teks pindah ke atas grid, sticky mati ---- */
+
   .featured-section {
     padding: 32px 20px 60px 20px;
   }

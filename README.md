@@ -7,5 +7,3 @@
 - Gede Satya Putra Aryanta 5027251012
 
 ![meme](https://apps.codepolitan.com/sites/learn/uploads/original/202308/nocomment.png)
-
-_nyoba-nyoba aj, baru belajar branch bener g yh_

@@ -6,7 +6,7 @@
     <title>The Manhattan Project – J. Robert Oppenheimer</title>
     <meta name="description" content="An in-depth look at the Manhattan Project — the secret WWII program that developed the world's first nuclear weapons, led by J. Robert Oppenheimer." />
 
-    <!-- Google Fonts: Onest & Instrument Serif -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,14 +14,22 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="manhattan-project.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/manhattan-project.css" />
   </head>
   <body class="oppenheimer-page">
 
-    <!-- ===================== NAVIGATION ===================== -->
+
     <nav class="animate-fade-in">
       <div class="logo">J.R. OPPENHEIMER</div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="featured-works.html">Featured Works</a>
@@ -29,7 +37,7 @@
       </div>
     </nav>
 
-    <!-- ===================== HERO ===================== -->
+
     <div id="mp-hero" class="mp-hero">
       <div class="bg-circle circle-1"></div>
       <div class="bg-circle circle-2"></div>
@@ -42,25 +50,21 @@
         The secret wartime program that reshaped human civilization —
         and left its director questioning everything.
       </p>
-      <a href="#overview" class="btn-outline mp-scroll-btn">Explore &darr;</a>
+
     </div>
 
-    <!-- ===================== OVERVIEW ===================== -->
+
     <section id="overview" class="section mp-section">
       <div class="image-block">
-        <!--
-          SARAN GAMBAR: Foto Trinity Test explosion (16 Juli 1945)
-          Cari "Trinity test explosion 1945" di Wikipedia Commons (domain publik)
-          Simpan sebagai: images/trinity.jpg
-        -->
+
         <img
-          src="images/manhattan.jpg"
-          alt="Trinity Test - uji coba nuklir pertama, 16 Juli 1945"
+          src="images/trinity-test.jpg"
+          alt="Trinity Test — world's first nuclear detonation, July 16, 1945"
           width="600"
           height="400"
         />
         <p class="mp-img-caption">
-          <small>Trinity Test, New Mexico — 16 Juli 1945. Uji coba nuklir pertama dalam sejarah.</small>
+          <small>Trinity Test, New Mexico — July 16, 1945. The world's first nuclear detonation.</small>
         </p>
       </div>
       <div class="content-block">
@@ -80,13 +84,13 @@
         <p>
           J. Robert Oppenheimer was appointed <b>Scientific Director</b> of the
           Los Alamos Laboratory in New Mexico — the project's central weapon-design
-          facility — in <mark>1943</mark>. His brilliance and leadership were
-          <s>questioned by many</s> ultimately decisive.
+          facility — in <mark>1943</mark>. His brilliance and leadership proved to be
+          <b>ultimately decisive</b>, despite early doubts from military officials.
         </p>
       </div>
     </section>
 
-    <!-- ===================== KEY FACTS TABLE ===================== -->
+
     <section id="key-facts" class="mp-facts-section">
       <div class="mp-facts-inner">
         <h2 class="mp-section-title">Key Facts at a Glance</h2>
@@ -98,49 +102,49 @@
           <table id="mp-facts-table" class="mp-table">
             <thead>
               <tr>
-                <th>Kategori</th>
+                <th>Category</th>
                 <th>Detail</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><b>Nama Resmi</b></td>
+                <td><b>Official Name</b></td>
                 <td>Manhattan Engineer District (MED)</td>
               </tr>
               <tr>
-                <td><b>Negara Pelaksana</b></td>
-                <td>Amerika Serikat, Inggris Raya, Kanada</td>
+                <td><b>Participating Nations</b></td>
+                <td>United States, United Kingdom, Canada</td>
               </tr>
               <tr>
-                <td><b>Periode</b></td>
+                <td><b>Period</b></td>
                 <td>1942 – 1946</td>
               </tr>
               <tr>
-                <td><b>Direktur Militer</b></td>
-                <td>Brigadir Jenderal Leslie R. Groves Jr.</td>
+                <td><b>Military Director</b></td>
+                <td>Brigadier General Leslie R. Groves Jr.</td>
               </tr>
               <tr>
-                <td><b>Direktur Ilmiah</b></td>
+                <td><b>Scientific Director</b></td>
                 <td>J. Robert Oppenheimer</td>
               </tr>
               <tr>
-                <td><b>Jumlah Personel</b></td>
-                <td>&gt; 130.000 orang</td>
+                <td><b>Total Personnel</b></td>
+                <td>&gt; 130,000 people</td>
               </tr>
               <tr>
-                <td><b>Biaya Total</b></td>
-                <td>&plusmn;$2 miliar (setara &plusmn;$30 miliar saat ini)</td>
+                <td><b>Total Cost</b></td>
+                <td>&plusmn;$2 billion (equivalent to &plusmn;$30 billion today)</td>
               </tr>
               <tr>
-                <td><b>Lokasi Utama</b></td>
+                <td><b>Primary Locations</b></td>
                 <td>Los Alamos (NM), Oak Ridge (TN), Hanford (WA)</td>
               </tr>
               <tr>
-                <td><b>Uji Coba Pertama</b></td>
-                <td>Trinity Test — 16 Juli 1945, New Mexico</td>
+                <td><b>First Test</b></td>
+                <td>Trinity Test — July 16, 1945, New Mexico</td>
               </tr>
               <tr>
-                <td><b>Senjata yang Dihasilkan</b></td>
+                <td><b>Weapons Produced</b></td>
                 <td>Little Boy (Uranium-235) &amp; Fat Man (Plutonium-239)</td>
               </tr>
             </tbody>
@@ -149,57 +153,53 @@
       </div>
     </section>
 
-    <!-- ===================== PHASES / ORDERED LIST ===================== -->
+
     <section id="phases" class="section section-reverse mp-section">
       <div class="image-block">
-        <!--
-          SARAN GAMBAR: Foto suasana laboratorium Los Alamos tahun 1940-an
-          Cari "Los Alamos Laboratory 1940s" di Wikipedia Commons (domain publik)
-          Simpan sebagai: images/los-alamos.jpg
-        -->
+
         <img
-          src="images/4.jpeg"
-          alt="Los Alamos Laboratory – pusat desain senjata nuklir Manhattan Project"
+          src="images/los-alamos.jpg"
+          alt="Los Alamos Laboratory – the secret nuclear weapon design hub of the Manhattan Project"
           width="600"
           height="400"
         />
         <p class="mp-img-caption">
-          <small>Los Alamos Laboratory, New Mexico — pusat desain senjata nuklir rahasia.</small>
+          <small>Los Alamos Laboratory, New Mexico — the classified center of nuclear weapon design.</small>
         </p>
       </div>
       <div class="content-block">
-        <h2>Tahapan<br /><em>Pelaksanaan Proyek</em></h2>
-        <p>Proyek Manhattan berlangsung dalam empat tahapan besar yang saling berkaitan:</p>
+        <h2>Project<br /><em>Phases</em></h2>
+        <p>The Manhattan Project unfolded across four major interconnected phases:</p>
         <ol class="mp-ol">
           <li>
-            <b>Penelitian Awal (1939–1941)</b> — Fisikawan seperti Einstein dan Szilard
-            menginformasikan kemungkinan bom nuklir kepada Presiden Roosevelt melalui
+            <b>Early Research (1939–1941)</b> — Physicists including Einstein and Szilard
+            informed President Roosevelt of the possibility of a nuclear bomb through the
             <i>Einstein–Szilard Letter</i>.
           </li>
           <li>
-            <b>Pembentukan &amp; Mobilisasi (1942)</b> — Program resmi dimulai di bawah
-            Army Corps of Engineers. General Groves ditunjuk sebagai komandan militer.
+            <b>Formation &amp; Mobilization (1942)</b> — The official program launched under
+            the Army Corps of Engineers. General Groves was appointed military commander.
           </li>
           <li>
-            <b>Riset &amp; Produksi Material (1943–1944)</b> — Pengayaan uranium di Oak Ridge
-            dan produksi plutonium di Hanford berjalan paralel. Oppenheimer memimpin
-            desain senjata di Los Alamos.
+            <b>Research &amp; Material Production (1943–1944)</b> — Uranium enrichment at Oak Ridge
+            and plutonium production at Hanford ran in parallel. Oppenheimer led
+            weapon design at Los Alamos.
           </li>
           <li>
-            <b>Uji Coba &amp; Penggunaan (1945)</b> — Trinity Test berhasil pada 16 Juli 1945.
-            Little Boy dijatuhkan di Hiroshima (6 Agustus) dan Fat Man di Nagasaki
-            (9 Agustus), mengakhiri Perang Dunia II.
+            <b>Testing &amp; Deployment (1945)</b> — The <mark>Trinity Test</mark> succeeded on July 16, 1945.
+            Little Boy was dropped on <mark>Hiroshima</mark> (August 6) and Fat Man on <mark>Nagasaki</mark>
+            (August 9), ending World War II.
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- ===================== SCIENCE CARDS / GRID ===================== -->
+
     <section id="science" class="mp-science-section">
       <div class="mp-science-inner">
         <h2 class="mp-section-title">The Science Behind the Bomb</h2>
         <p class="mp-section-subtitle">
-          Dua jalur desain senjata nuklir yang dikembangkan secara bersamaan.
+          Two nuclear weapon design paths developed simultaneously.
         </p>
 
         <div class="mp-cards-grid">
@@ -212,13 +212,13 @@
               Uranium-235
             </p>
             <p>
-              Desain lebih sederhana: satu massa sub-kritis uranium ditembakkan ke massa
-              lain menggunakan bahan peledak konvensional, memicu reaksi berantai fisi.
+              A simpler design: one sub-critical mass of uranium is fired into another
+              using conventional explosives, triggering a fission chain reaction.
             </p>
             <ul class="mp-ul">
-              <li>Tidak memerlukan uji coba sebelumnya</li>
-              <li>Dijatuhkan di Hiroshima, 6 Agustus 1945</li>
-              <li>Kekuatan setara <b>&plusmn;15.000 ton</b> TNT</li>
+              <li>Required no prior testing</li>
+              <li>Dropped on Hiroshima, August 6, 1945</li>
+              <li>Yield equivalent to <b>&plusmn;15,000 tons</b> of TNT</li>
             </ul>
           </div>
 
@@ -230,14 +230,14 @@
               Plutonium-239
             </p>
             <p>
-              Desain lebih kompleks: lensa peledak mengelilingi inti plutonium, meledak
-              ke dalam secara simetris untuk menciptakan kepadatan super-kritis dalam waktu
-              sepersekian detik.
+              A more complex design: explosive lenses surround a plutonium core and
+              detonate inward symmetrically, achieving a super-critical density
+              in a fraction of a second.
             </p>
             <ul class="mp-ul">
-              <li>Memerlukan uji coba — Trinity Test</li>
-              <li>Dijatuhkan di Nagasaki, 9 Agustus 1945</li>
-              <li>Kekuatan setara <b>&plusmn;21.000 ton</b> TNT</li>
+              <li>Required prior testing — the Trinity Test</li>
+              <li>Dropped on Nagasaki, August 9, 1945</li>
+              <li>Yield equivalent to <b>&plusmn;21,000 tons</b> of TNT</li>
             </ul>
           </div>
 
@@ -245,12 +245,12 @@
             <div class="mp-card-number">03</div>
             <h3>Trinity Test</h3>
             <p class="mp-card-label">
-              <span class="mp-badge mp-badge-alt">16 Juli 1945</span>
+              <span class="mp-badge mp-badge-alt">July 16, 1945</span>
               New Mexico
             </p>
             <p>
-              Uji coba nuklir pertama dalam sejarah manusia. Oppenheimer menyaksikan
-              ledakan dari bunker pengamatan dan teringat kutipan dari Bhagavad Gita:
+              The world's first nuclear detonation. Oppenheimer watched the explosion
+              from an observation bunker and recalled a passage from the Bhagavad Gita:
             </p>
             <blockquote class="mp-quote">
               <i>"Now I am become Death, the destroyer of worlds."</i>
@@ -261,114 +261,123 @@
       </div>
     </section>
 
-    <!-- ===================== LEGACY / UNORDERED LIST ===================== -->
+
     <section id="legacy" class="section mp-section">
       <div class="image-block">
-        <!--
-          SARAN GAMBAR: Foto Oppenheimer bersama ilmuwan-ilmuwan lain di Los Alamos
-          Cari "Oppenheimer scientists group photo Los Alamos" di Wikipedia Commons
-          Simpan sebagai: images/oppenheimer-team.jpg
-        -->
+
         <img
-          src="images/1.avif"
-          alt="Oppenheimer dan tim ilmuwan Manhattan Project"
+          src="images/oppenheimer.jpg"
+          alt="Oppenheimer and the Manhattan Project scientific team"
           width="600"
           height="400"
         />
         <p class="mp-img-caption">
-          <small>Warisan moral yang terus diperdebatkan hingga hari ini.</small>
+          <small>A moral legacy still debated to this day.</small>
         </p>
       </div>
       <div class="content-block">
         <h2>Legacy &amp;<br /><em>Moral Reckoning</em></h2>
         <p>
-          Keberhasilan Manhattan Project membawa akhir Perang Dunia II, namun juga
-          membuka era yang Oppenheimer sendiri sebut sebagai
+          The success of the Manhattan Project brought an end to World War II, but also
+          opened an era that Oppenheimer himself described as
           <i>"the destroyer of worlds."</i>
         </p>
-        <p>Dampak jangka panjang proyek ini mencakup:</p>
+        <p>The project's long-term consequences include:</p>
         <ul class="mp-ul">
-          <li>Lebih dari <b>200.000 jiwa</b> meninggal akibat pengeboman Hiroshima &amp; Nagasaki</li>
-          <li>Dimulainya <b>Perang Dingin</b> dan perlombaan senjata nuklir AS–Soviet</li>
-          <li>Terbentuknya <b>AEC</b> (Atomic Energy Commission) untuk mengatur teknologi nuklir</li>
-          <li>Oppenheimer kehilangan izin keamanannya pada <b>1954</b> di tengah tuduhan politik</li>
-          <li>Rehabilitasi nama baiknya oleh Departemen Energi AS pada <b>Desember 2022</b></li>
+          <li>Over <b>200,000 lives</b> lost due to the bombings of <mark>Hiroshima</mark> &amp; <mark>Nagasaki</mark></li>
+          <li>The beginning of the <b>Cold War</b> and the US–Soviet nuclear arms race</li>
+          <li>Establishment of the <b>AEC</b> (Atomic Energy Commission) to regulate nuclear technology</li>
+          <li>Oppenheimer's security clearance revoked in <mark>1954</mark> amid political allegations</li>
+          <li>His name was finally cleared by the US Department of Energy in <mark>December 2022</mark></li>
         </ul>
-        <a href="index.html" class="btn-outline">&larr; Kembali ke Home</a>
+        <a href="index.html" class="btn-outline">&larr; Back to Home</a>
       </div>
     </section>
 
-    <!-- ===================== CONTACT FORM ===================== -->
+
     <section id="contact" class="mp-form-section">
       <div class="mp-form-inner">
-        <h2 class="mp-section-title">Punya Pertanyaan?</h2>
+        <h2 class="mp-section-title">Have a Question?</h2>
         <p class="mp-section-subtitle">
-          Kirimkan pertanyaan atau komentar seputar Manhattan Project dan warisan Oppenheimer.
+          Send a question or comment about the Manhattan Project and Oppenheimer's legacy.
         </p>
 
         <form id="mp-contact-form" class="mp-form" action="#" method="POST">
           <fieldset class="mp-fieldset">
-            <legend class="mp-legend">Formulir Pertanyaan</legend>
+            <legend class="mp-legend">Question Form</legend>
 
             <div class="mp-form-group">
-              <label for="mp-name">Nama Lengkap</label>
+              <label for="mp-name">Full Name</label>
               <input
                 type="text"
                 id="mp-name"
                 name="name"
-                placeholder="Masukkan nama lengkap"
+                placeholder="Enter your full name"
                 required
               />
             </div>
 
             <div class="mp-form-group">
-              <label for="mp-email">Alamat Email</label>
+              <label for="mp-email">Email Address</label>
               <input
                 type="email"
                 id="mp-email"
                 name="email"
-                placeholder="Masukkan email aktif"
+                placeholder="Enter your email address"
                 required
               />
             </div>
 
             <div class="mp-form-group">
-              <label for="mp-topic">Topik Pertanyaan</label>
+              <label for="mp-topic">Topic</label>
               <select id="mp-topic" name="topic">
-                <option value="">-- Pilih Topik --</option>
-                <option value="science">Sains &amp; Fisika Nuklir</option>
-                <option value="history">Sejarah &amp; Timeline</option>
-                <option value="ethics">Etika &amp; Moral</option>
-                <option value="oppenheimer">Biografi Oppenheimer</option>
-                <option value="other">Lainnya</option>
+                <option value="">-- Select a Topic --</option>
+                <option value="science">Science &amp; Nuclear Physics</option>
+                <option value="history">History &amp; Timeline</option>
+                <option value="ethics">Ethics &amp; Morality</option>
+                <option value="oppenheimer">Oppenheimer's Biography</option>
+                <option value="other">Other</option>
               </select>
             </div>
 
             <div class="mp-form-group">
-              <label for="mp-message">Pesan / Pertanyaan</label>
+              <label for="mp-message">Message / Question</label>
               <textarea
                 id="mp-message"
                 name="message"
                 rows="5"
-                placeholder="Tuliskan pertanyaan atau komentarmu di sini..."
+                placeholder="Write your question or comment here..."
                 required
               ></textarea>
             </div>
 
             <button type="submit" id="mp-submit-btn" class="mp-submit-btn">
-              Kirim Pertanyaan
+              Submit Question
             </button>
           </fieldset>
         </form>
+
+        <div id="mp-success" class="mp-success">
+          <p><b>Message sent.</b> We'll get back to you soon.</p>
+        </div>
+
+        <script>
+          document.getElementById('mp-contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.style.display = 'none';
+            document.getElementById('mp-success').style.display = 'block';
+          });
+        </script>
+
       </div>
     </section>
 
-    <!-- ===================== FOOTER ===================== -->
+
     <footer>
       <p>&copy; 2026 Web Programming Group C02 2026</p>
       <p>
         <small>
-          Halaman ini dibuat sebagai bagian dari Praktikum Pemrograman Web Modul 1.
+          This page was created as part of Web Programming Practicum Module 1.
         </small>
       </p>
     </footer>

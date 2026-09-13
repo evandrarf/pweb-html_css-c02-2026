@@ -38,11 +38,12 @@ nav {
 }
 
 .hamburger {
-  display: none; /* Menyembunyikan hamburger di desktop */
+  display: none;
   position: relative;
   z-index: 9999;
   cursor: pointer;
   flex-direction: column;
+  justify-content: center;
   gap: 5px;
 }
 
@@ -100,14 +101,108 @@ nav {
   font-weight: 400;
 }
 
-/* PAGE CONTENT */
+/* PAGE WRAPPER */
 .page-wrapper {
-  padding: 60px 60px;
+  padding: 0;
 }
 
-.page-title {
-  font-size: 4rem;
-  margin: 0 0 40px 0;
+.section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 0px;
+  color: var(--text-color);
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+/* SECTION: EDUCATION (section pertama, dikasih padding-top ganti heading Experience) */
+.resume-section {
+  padding: 32px 60px 40px 60px;
+}
+
+.resume-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.timeline {
+  position: relative;
+  flex: 1;
+  padding-left: 32px;
+  border-left: 2px solid var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.resume-item {
+  position: relative;
+}
+
+.resume-item::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  border: 2px solid var(--bg-color);
+}
+
+.resume-date {
+  font-family: "Geist Mono", monospace;
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.resume-title {
+  font-family: "Onest", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: #ffffff;
+}
+
+.resume-subtitle {
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
+  font-size: 22px;
+  color: #cccccc;
+  margin: 0 0 12px 0;
+}
+
+.resume-desc {
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 650px;
+}
+
+.resume-photo {
+  flex-shrink: 0;
+  width: 460px;
+}
+
+.resume-photo img {
+  display: block;
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* SECTION: FEATURED WORKS */
+.featured-section {
+  padding: 40px 60px 80px 60px;
+  border-top: 1px solid #333;
+  position: relative;
 }
 
 .content-row {
@@ -162,7 +257,7 @@ nav {
 
 .box-overlay {
   position: absolute;
-  bottom: 0; /* Memastikan overlay hanya ada di bagian bawah */
+  bottom: 0;
   left: 0;
   right: 0;
   padding: 20px;
@@ -179,6 +274,16 @@ nav {
     transform 0.3s ease;
 }
 
+.box-title {
+  font-family: "Onest", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0 0 8px 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
 .box-desc {
   font-family: "Geist Mono", monospace;
   font-size: 13px;
@@ -186,19 +291,7 @@ nav {
   margin: 0;
 }
 
-.box-title {
-  font-family: "Onest", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  margin: 16px 0 0 0;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: all 0.3s ease;
-}
-
-/* ================================
-   EFEK HOVER
-   ================================ */
+/* EFEK HOVER */
 .project-item:hover .box-overlay {
   opacity: 1;
   transform: translateY(0);
@@ -230,7 +323,7 @@ footer {
   }
 
   .hamburger {
-    display: flex; /* Memunculkan hamburger hanya di mobile */
+    display: flex;
   }
 
   .nav-links {
@@ -264,13 +357,47 @@ footer {
     right: 0;
   }
 
-  .page-wrapper {
-    padding: 40px 20px;
+  .resume-section {
+    padding: 0px 20px 32px 20px;
   }
 
-  .page-title {
-    font-size: 2.8rem;
+  .resume-content {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .resume-photo {
+    width: 100%;
+    order: -1;
+  }
+
+  .resume-photo img {
+    height: 320px;
+  }
+
+  .timeline {
+    padding-left: 24px;
+  }
+
+  .resume-item::before {
+    left: -31px;
+  }
+
+  .featured-section {
+    padding: 32px 20px 60px 20px;
+  }
+
+  .section-heading {
+    font-size: 2rem;
     margin-bottom: 24px;
+  }
+
+  .resume-title {
+    font-size: 20px;
+  }
+
+  .resume-subtitle {
+    font-size: 18px;
   }
 
   .content-row {

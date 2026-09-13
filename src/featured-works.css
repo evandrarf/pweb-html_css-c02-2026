@@ -69,9 +69,28 @@ nav {
   text-decoration: none;
   letter-spacing: 1px;
   transition: color 0.2s ease;
+  position: relative;
+  padding-bottom: 4px;
 }
 
-.nav-links a:hover {
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.nav-active::after {
+  width: 100%;
+}
+
+.nav-links a:hover,
+.nav-links a.nav-active {
   color: #ffffff;
 }
 
@@ -108,17 +127,12 @@ nav {
 
 .section-heading {
   font-size: 2.5rem;
-  margin-bottom: 0px;
   color: var(--text-color);
 }
 
-h2 {
-  margin-top: 10px;
-}
-
-/* SECTION: EDUCATION (section pertama, dikasih padding-top ganti heading Experience) */
+/* SECTION: EDUCATION */
 .resume-section {
-  padding: 32px 60px 40px 60px;
+  padding: 0px 60px 40px 60px;
 }
 
 .resume-content {
@@ -200,7 +214,7 @@ h2 {
 
 /* SECTION: FEATURED WORKS */
 .featured-section {
-  padding: 40px 60px 80px 60px;
+  padding: 0px 60px 80px 60px;
   border-top: 1px solid #333;
   position: relative;
 }
@@ -369,10 +383,16 @@ footer {
   .resume-photo {
     width: 100%;
     order: -1;
+    display: flex;
+    justify-content: center;
   }
 
   .resume-photo img {
+    width: auto;
+    max-width: 280px;
     height: 320px;
+    object-fit: contain;
+    margin: 0 auto;
   }
 
   .timeline {
